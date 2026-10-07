@@ -1,0 +1,28 @@
+# Binários gerados pelo `make build`
+/bin/
+/logpipe
+
+# Saída de testes e benchmarks
+*.test
+*.out
+coverage.*
+*.prof
+
+# Logs gerados ao rodar o projeto localmente
+# (os de testdata/ são fixtures de teste e devem ir pro git)
+*.log
+!testdata/**
+
+# Workspace local do Go
+go.work
+go.work.sum
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+
+# Editores e sistema
+.vscode/
+.idea/
+*.swp
+.DS_Store
